@@ -8,5 +8,8 @@ one_to_onehundred.each do |num|
   if (num % 5) == 0
     output += "Maker"
   end
-  puts num.to_s + " " + output
+  if (output == "")
+    output = num.to_s
+  end
+  puts output
 end
